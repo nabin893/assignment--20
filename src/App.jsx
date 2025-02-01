@@ -18,7 +18,8 @@ function App() {
       children:[
         {
           path:"/",
-          element: <Home2></Home2>
+          element: <Home2></Home2>,
+          loader:()=>fetch("https://randomuser.me/api/?results=50"),
 
         },
         {
